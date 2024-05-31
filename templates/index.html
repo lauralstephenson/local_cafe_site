@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Coffee and Wi-fi in Busan, South Korea!{% endblock %}
+
+
+{% block content %}
+<div class="jumbotron px-4 py-5 my-5 text-center">
+    <div class="container">
+      <h1 class="display-4">☕️ Coffee & Wi-fi 💻</h1>
+      <p class="lead">Want to work in a cafe but need power and Wi-Fi in Busan, South Korea?</p>
+      <hr class="my-4">
+      <p>You've found the right place! Check out my collection of cafes with data on power socket availability and
+          Wi-Fi speed.</p>
+      <a
+      class="btn btn-warning btn-lg"
+      href="{{ url_for('cafes') }}"
+      role="button"
+      >Show Me!</a>
+    </div>
+</div>
+
+
+{% endblock %}
